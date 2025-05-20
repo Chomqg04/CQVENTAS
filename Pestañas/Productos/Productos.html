@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CQ NOVEDADES</title>
+    <link rel="stylesheet" href="Productos.css">
+    <script src="Productos.js"></script>
+</head>
+<body>
+    <h1>CQ NOVEDADES</h1>
+    <h2>DISTRIBUIDORA KALUA/RONDINA</h2>
+    <hr>
+
+    <div class="ContenedorPrimario"> 
+        <input type="button" value="Cargar Compras" onclick="GoToCompras()">
+        <input type="button" value="Cargar Ventas" onclick="GoToVentas()">
+    </div>
+
+    <hr>
+    <h2>LISTADO DE PRODUCTOS</h2>
+
+    <div class="Productos">
+        <p>CARGAR PRODUCTO</p>
+        <label>Codigo:</label>
+        <input type="text" id="Codigo" style="width: 100px;">
+        <label>Nombre:</label>
+        <input type="text" id="Nombre">
+        <label>Precio Compra:</label>
+        <input type="text" id="PrecioCompra" style="width: 100px;">
+        <label>Precio Venta:</label>
+        <input type="text" id="PrecioVenta" style="width: 100px;">
+        <label>Stock:</label>
+        <input type="text" id="Stock" style="width: 50px;">
+        <button onclick="CargarProductos()">CARGAR PRODUCTO</button>
+    </div>
+
+    <div class="Cesta">
+        <table>
+            <thead>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Precio Compra</th>
+                    <th>Precio Venta</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="CestaBody"></tbody>
+        </table>
+    </div>
+</body>
+</html>

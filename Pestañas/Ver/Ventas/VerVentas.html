@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CQ NOVEDADES</title>
+    <link rel="stylesheet" href="VerVentas.css">
+    <script src="VerVentas.js"></script>
+</head>
+<body>
+    <h1> CQ NOVEDADES </h1>
+    <h2> DISTRIBUIDORA KALUA/RONDINA </h2>
+    <hr> 
+    <div class="ContenedorPrimario"> 
+        <input type="button" value="←" onclick="GoToVentas()">
+        <input type="button" value="Cargar Compras" onclick="GoToCompras()">
+        <input type="button" value="Productos" onclick="GoToProductos()">
+    </div>
+    <hr>
+    <div class="VerVentas"> 
+        <h2> Verificar Ventas </h2>
+        <p> Ventas </p>
+        <table id="tablaHistorial">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Cliente</th>
+                    <th>Cant. Prod.</th>
+                    <th>Total</th>
+                    <th>Fecha</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</body>
+</html>
