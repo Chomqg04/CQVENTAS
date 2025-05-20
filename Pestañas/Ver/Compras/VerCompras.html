@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CQ NOVEDADES</title>
+    <link rel="stylesheet" href="VerCompras.css">
+    <script src="VerCompras.js" defer></script>
+    <link rel="icon" href="..\..\..\Img\Logo.png" type="image/png">
+</head>
+<body>
+    <h1>CQ NOVEDADES</h1>
+    <h2>DISTRIBUIDORA KALUA/RONDINA</h2>
+    <hr>
+    <div class="ContenedorPrimario">
+        <input type="button" value="←" onclick="GoToCompras()">
+        <input type="button" value="Cargar Ventas" onclick="GoToVentas()">
+        <input type="button" value="Productos" onclick="GoToProductos()">
+    </div>
+    <hr>
+    <div class="VerCompras">
+        <h2>Verificar Compras</h2>
+        <p>Compras</p>
+        <table id="tablaCompras">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Proveedor</th>
+                    <th>Timbrado</th>
+                    <th>Prefijo</th>
+                    <th>Número Factura</th>
+                    <th>Cant. Prod.</th>
+                    <th>Total</th>
+                    <th>Fecha</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</body>
+</html>

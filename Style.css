@@ -1,0 +1,207 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff5f8;
+    color: #ff6fa3;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #ff3b77;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ffb6c1;
+    margin: 20px 0;
+}
+
+.ContenedorPrimario {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.ContenedorPrimario input[type="button"] {
+    background-color: #ff6fa3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.VerVentas {
+    background-color: #ff6fa3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.ContenedorPrimario input[type="button"]:hover {
+    background-color: #ff3b77;
+}
+
+.Cliente, .Ventas {
+    margin-bottom: 20px;
+}
+
+.Cliente input, .Ventas input {
+    padding: 8px;
+    border: 1px solid #ffb6c1;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.Cesta {
+    margin-top: 20px;
+}
+
+.Cesta table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Cesta th, .Cesta td {
+    padding: 10px;
+    border-bottom: 1px solid #ffb6c1;
+    text-align: center;
+}
+
+.Cesta th {
+    background-color: #ff6fa3;
+    color: #fff;
+}
+
+.Cesta td {
+    background-color: #ffe4e9;
+}
+
+.Cesta tr:hover td {
+    background-color: #ffb6c1;
+    color: #fff;
+}
+
+button {
+    background-color: #ff6fa3;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ff3b77;
+}
+
+@media (max-width: 480px) {
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff0f5;
+    color: #333;
+    margin: 0;
+    padding: 10px;
+  }
+
+  h1, h2 {
+    font-size: 20px;
+    color: #ff3b77;
+    margin-bottom: 15px;
+  }
+
+  .ContenedorPrimario {
+    flex-direction: column;
+    gap: 12px;
+    margin: 10px 0;
+  }
+
+  .ContenedorPrimario input[type="button"],
+  .VerVentas,
+  button {
+    width: 100%;
+    font-size: 18px;
+    padding: 14px;
+    border-radius: 10px;
+    background-color: #ff3b77;
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s;
+  }
+
+  .ContenedorPrimario input[type="button"]:hover,
+  .VerVentas:hover,
+  button:hover {
+    background-color: #e6326a;
+  }
+
+  .Cliente, .Ventas {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .Cliente input, .Ventas input {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ffb6c1;
+    border-radius: 8px;
+  }
+
+  .Cesta {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    overflow-x: auto;
+  }
+
+  .Cesta table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  .Cesta th, .Cesta td {
+    padding: 10px;
+    border-bottom: 1px solid #ffe4ec;
+    text-align: center;
+  }
+
+  .Cesta th {
+    background-color: #ff6fa3;
+    color: #fff;
+  }
+
+  .Cesta td {
+    background-color: #fff8fb;
+  }
+
+  .Cesta tr:hover td {
+    background-color: #ffb6c1;
+    color: #fff;
+  }
+
+  hr {
+    margin: 20px 0;
+    border-top: 1px solid #ffb6c1;
+  }
+}

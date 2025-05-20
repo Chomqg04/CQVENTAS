@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>COMPRAS CQ</title>
+    <link rel="stylesheet" href="Compras.css">
+    <script src="Compras.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="icon" href="..\..\Img\Logo.png" type="image/png">
+</head>
+<body>
+    <h1> CQ NOVEDADES </h1>
+    <h2> DISTRIBUIDORA KALUA/RONDINA </h2>
+    <hr>
+    <div class="ContenedorPrimario"> 
+        <input type="button" value="Cargar Ventas" onclick="GoToVentas()">
+        <input type="button" value="Productos" onclick="GoToProductos()">
+    </div>
+    
+    <hr>
+    <H2> COMPRAS </H2>
+    <input type="button" value="Ver Compras" class="VerCompras" onclick="GoToVerCompras()">
+
+    <div class="Proveedor">
+        <p> DATOS DEL PROVEEDOR </p>
+        <input type="text" id="RUC" placeholder="RUC PROVEEDOR">
+        <input type="text" id="Proveedor" placeholder="NOMBRE PROVEEDOR">
+    </div>
+
+    <div class="DatosFactura">
+        <p> DATOS DE LA FACTURA </p>
+        <label for=""> PREFIJO: </label>
+        <input type="text" name="" id="Prefijo" style="width: 50px;">
+        <label for=""> NUMERO DE FACTURA: </label>
+        <input type="text" name="" id="NumFactura" style="width: 100px;">
+        <label for=""> TIMBRADO: </label>
+        <input type="text" name="" id="Timbrado" style="width: 100px;">
+    </div>
+
+    <div class="Compras">
+        <p> CARGAR PRODUCTOS PARA LA COMPRA </p>
+        <input type="text" id="codigoProducto" style="width: 100px;" oninput="autocompletarProducto()" placeholder="Cod Producto">
+        <label for=""> Nombre del producto: </label> 
+        <input type="text" id="nombreProducto" disabled>
+        <label for=""> Precio del producto: </label>
+        <input type="text" id="precioProducto" style="width: 100px;">
+        <label for=""> Cantidad del producto: </label>
+        <input type="number" id="cantidadProducto" style="width: 40px;">
+        <br>
+        <button onclick="agregarProducto()">CARGAR PRODUCTO</button>
+    </div>
+
+    <div class="Cesta">
+        <p> CESTA DE PRODUCTOS </p>
+            <table id="tablaCesta">
+                <thead>
+                    <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+    </div>
+
+    <br>
+    <button onclick="realizarCompra()">REALIZAR COMPRAS</button>
+
+
+</body>
+</html>
